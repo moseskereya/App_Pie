@@ -1,0 +1,177 @@
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 4px; 
+    margin: 10px 0;
+}
+.container-items{
+    max-width: 400px;
+    margin: 5px;
+    background-color: rgb(59, 56, 57);
+    color: #efefee;
+    position: relative;
+}
+.container-items:hover .item-title{
+    visibility: visible;
+    transition: linear;
+}
+.item-title{
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1000;
+content: '';
+transition: .3s ease-in;
+width: 95%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 95%;
+margin:5px;
+visibility: hidden;
+border: 1px solid rgb(192, 191, 191);
+background-color: rgba(34, 31, 31, 0.781);
+}
+
+.container img{
+    width: 300px;
+    height:300px;
+}
+
+.main-details{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(156, 156, 156);
+}
+.info{
+    padding: 10px 15px;
+}
+
+.info hr{
+    background-color: rgb(231, 231, 231);
+}
+.info h4{
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(238, 238, 238);
+}
+.info p {
+    color: #4e4e4e;
+}
+
+
+.info span{
+    color: rgb(226, 226, 226);
+}
+.form-container{
+    background-color: #e0e0e0;
+    padding:20px;
+}
+.form-container form{
+    padding: 10px;
+}
+
+.field1{
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.field1 input{
+    border: none;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.text-comments{
+    border: none;
+    padding: 4px;
+    margin: 3px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.comments-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .main {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .main img{
+        max-width: 100%;
+    }
+    .main-details{
+        flex-direction: column;
+    }
+    .main-details img{
+     max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .main img{
+        max-width: 100%;
+        height: 200px;
+    }
+    .main-details{
+        flex-direction: column;
+    }
+    .img img{
+        width:100%;
+        margin: 0 auto;
+    }
+    .main-details img{
+        width: 100%;
+    }
+    .field1{
+        flex-direction: column;
+    }
+    .field1 input{
+        width: 100%;
+        margin: 8px 0;
+    }
+}
